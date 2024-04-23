@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+#botCard,
+#playerCard {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 50vw;
+    height: fit-content;
+}
+
+#botCard div,
+#playerCard div {
+    width: 10%;
+    height: auto;
+}
+
+#botCard img,
+#playerCard img {
+    width: 100%;
+    height: auto;
+}
+
+#boardCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100vw;
+    height: 35vh;
+}
+
+#board {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 89vw;
+    height: 34vh;
+
+    gap: 5px;
+
+    
+
+    img {
+        width: calc(89vw/15);
+    }
+
+}
+
+
+
+
+
+
+#buttonDiv {
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#bazar {
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: rgb(11, 11, 11);
+    color: rgb(251, 250, 250);
+    margin-bottom: 20px;
+}
+
+#bazar:hover {
+    background-color: white;
+    color: black;
+}
+
+.rotateLeft {
+    rotate: -90deg;
+}
+
+.rotateRight {
+    rotate: 90deg;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    #botCard,
+    #playerCard {
+        max-width: 90vw;
+    }
+
+    #boardCard {
+        min-width: 100vw;
+        height: 50vh;
+    }
+
+    #buttonDiv {
+        margin-right: 15px;
+    }
+
+    #board {
+        max-width: 82vw;
+        max-height: 50vh;
+    }
+
+
+    #bazar {
+        padding: 8px 16px;
+        font-size: 14px;
+        width: auto;
+        max-width: 300px;
+    }
+}
